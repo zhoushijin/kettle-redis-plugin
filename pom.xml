@@ -7,11 +7,39 @@
     <groupId>com.qltek</groupId>
     <artifactId>kettle-redis-plugin</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <dependencies>
-
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle-core</artifactId>
+            <version>7.0.0.0-25</version>
+        </dependency>
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle-engine</artifactId>
+            <version>7.0.0.0-25</version>
+        </dependency>
+        <dependency>
+            <groupId>pentaho-kettle</groupId>
+            <artifactId>kettle-ui-swt</artifactId>
+            <version>7.0.0.0-25</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.swt</groupId>
+            <artifactId>swt-win32</artifactId>
+            <version>3.3.0.3346</version>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>3.1.0</version>
+        </dependency>
     </dependencies>
 
+    <build>
+        <finalName>kettle-redis-plugin</finalName>
+    </build>
 
     <repositories>
         <repository>
